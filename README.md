@@ -3,7 +3,7 @@
 
 Simple online note project
 
-![](screenshoot/CNOTE   Dashboard.png)
+![](screenshoot/CNOTE-Dashboard.png)
 
 Write note online and get it everywhere
 
@@ -24,10 +24,10 @@ Write note online and get it everywhere
 ![](screenshoot/CNOTES.png)
 
 ### Login screen
-![](screenshoot/CNOTE   Masuk.png)
+![](screenshoot/CNOTE-Masuk.png)
 
 ### Dashboard screen
-![](screenshoot/CNOTE   Dashboard.png)
+![](screenshoot/CNOTE-Dashboard.png)
 
 
 
