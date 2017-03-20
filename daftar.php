@@ -1,5 +1,6 @@
 <?php
 session_start();
+
 $error="";
 if(isset($_SESSION['user'])){
 	header("location: home.php");
@@ -17,9 +18,7 @@ else if (isset($_POST['submit'])) {
 	}
 	else{
 		// Membangun koneksi ke database
-		$connection = mysql_connect("localhost", "root", "");
-		// Seleksi Database
-		$db = mysql_select_db("cnote", $connection);
+		include "koneksi.php";
 		// SQL query untuk memeriksa apakah user terdapat di database?
 		$query = mysql_query("select username from user where username='$username'", $connection);
 		$rows = mysql_num_rows($query);

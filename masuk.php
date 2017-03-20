@@ -10,18 +10,16 @@
 		}
 		else
 		{
+			// Membangun koneksi ke database
+			include "koneksi.php";
 			// Variabel username dan password
 			$username=$_POST['username'];
 			$password=$_POST['password'];
-			// Membangun koneksi ke database
-			$connection = mysql_connect("localhost", "root", "");
 			// Mencegah MySQL injection 
 			$username = stripslashes($username);
 			$password = stripslashes($password);
 			$username = mysql_real_escape_string($username);
 			$password = mysql_real_escape_string($password);
-			// Seleksi Database
-			$db = mysql_select_db("cnote", $connection);
 			// SQL query untuk memeriksa apakah user terdapat di database?
 			$query = mysql_query("select * from user where username='$username' AND password='".md5($password)."'", $connection);
 			$rows = mysql_num_rows($query);

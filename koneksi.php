@@ -1,13 +1,13 @@
 <?php
 //File koneksi ke database
-$host="localhost";
-$username="root";
-$password="";
-$database="cnote";
+$hostServer="localhost";
+$usernameServer="root";
+$passwordServer="";
+$databaseServer="cnote";
 
 //Koneksi ke host
-mysql_connect($host,$username,$password) or die("Maaf, Server Mati");
+$connection = mysql_connect($hostServer,$usernameServer,$passwordServer) or die("Maaf, Server Mati");
 
 //Select database
-mysql_select_db($database) or die("Database tidak ada");
+$db = mysql_select_db($databaseServer, $connection) or die("Database tidak ada");
 ?>

@@ -35,7 +35,7 @@
 
         <!-- Footer -->
           <footer id="footer">
-            <span class="copyright">Made with <img src="assets/css/images/love.png"/> by <a href="#">M Reki Andika </a>.</span>
+            <span class="copyright">Made with <img src="assets/css/images/love.png"/> by <a href="http://github.com/rkndika">M Reki Andika </a>.</span>
           </footer>
         <!-- ./Footer -->
 
