@@ -16,7 +16,8 @@ Write note online and get it everywhere
 
 ## Usage
 
-- Download or clone
+- Download or clone this repository
+- Create database and import
 - Configure koneksi.php file with your server information
 
 ## Screenshoot
